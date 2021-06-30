@@ -108,7 +108,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <div className="row" style={{height:auto, backgroundColor:"pink"}}>
-            <header className="">
+            <header className=''>
               {!name && <button onClick={this.signIn}>Log in</button>}
               {!!name && <button onClick={this.signOut}>Log out</button>}
               {!!name && <User name={name} imgUrl={imgUrl} />}
