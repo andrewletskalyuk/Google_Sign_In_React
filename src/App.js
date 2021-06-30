@@ -19,7 +19,8 @@ class App extends Component {
     window.gapi.load("auth2", function () {
       window.gapi.auth2
         .init({
-          client_id: "582846519895-2ee43128mpfa31il4u9gmdde4totebdf",
+          //client_id: "582846519895-2ee43128mpfa31il4u9gmdde4totebdf",
+          client_id: process.env.OAUTH,
         })
         .then(_onInit, _onError);
     });
